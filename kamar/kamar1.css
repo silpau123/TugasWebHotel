@@ -1,0 +1,115 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://example.com/hotel-background.jpg'); /* Example soothing hotel background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #fff; /* White text for contrast */
+}
+
+/* Styling the form */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More dramatic shadow */
+    text-align: left;
+    animation: fadeIn 1s ease-out; /* Animation for smooth form appearance */
+}
+
+/* Animation for smooth form appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling form labels */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    display: block;
+    letter-spacing: 0.5px; /* Slight letter spacing for a cleaner look */
+}
+
+/* Styling input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for input fields */
+}
+
+/* Styling when input fields are focused */
+input[type="text"]:focus {
+    border-color: #65dfca;
+    outline: none;
+    transform: scale(1.05); /* Slightly enlarge the input field when focused */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); /* Adding more depth on focus */
+}
+
+/* Styling the submit button */
+button {
+    background-color: #65dfca; /* Green color for a fresh look */
+    color: white;
+    border: none;
+    padding: 18px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow on button */
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #65dfca;
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
+}
+
+/* Responsive design adjustments for small screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    form {
+        padding: 30px;
+    }
+    input[type="text"] {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
