@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <h2>Form Data Pengunjung</h2>
+    <h2>Form Data Pengunjung</h2>fgf
     <form action="proses_pengunjung.php" method="post">
         <label for="id_pengunjung">ID Pengunjung:</label><br>
         <input type="text" id="id_pengunjung" name="id_pengunjung" required><br>
